@@ -11,7 +11,7 @@ app.set('view engine', 'pug');
 app.use(express.static(__dirname + '/public'));
 app.use('/', require('./routes/index'));
 
-var port = process.env.PORT || 8080;
+var port = process.env.PORT || 8000;
 
 app.listen(port, function() {
 	console.log('Our app is running on http://localhost:' + port);

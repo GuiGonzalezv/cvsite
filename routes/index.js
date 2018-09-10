@@ -6,4 +6,9 @@ router.all('/', function(req, res, next) {
   res.render('home');
 });
 
+router.all('/download', function(req, res, next) {
+  var path = 'public/curriculo/GuilhermeGonzalezCurriculo.odt'
+  res.download(path);
+});
+
 module.exports = router;

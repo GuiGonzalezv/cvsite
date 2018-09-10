@@ -35,7 +35,7 @@ header
 							.h2.title Guilherme Gonzalez Vieira
 							p.category.text-white Desenvolvedor Web
 							a.btn.btn-primary.smooth-scroll.mr-2(href='#contact', data-aos='zoom-in', data-aos-anchor='data-aos-anchor') Entre em contato
-							a.btn.btn-primary(href='#', data-aos='zoom-in', data-aos-anchor='data-aos-anchor') Curriculo
+							a.btn.btn-primary#downloadLink(href='#', data-aos='zoom-in', data-aos-anchor='data-aos-anchor') Curriculo
 					.section
 						.container
 							.button-container
@@ -43,7 +43,7 @@ header
 									i.fa.fa-facebook
 								a.btn.btn-default.btn-round.btn-lg.btn-icon(href='https://github.com/guigonzalezv', rel='tooltip', title='Me siga no GitHub')
 									i.fa.fa-github
-								a.btn.btn-default.btn-round.btn-lg.btn-icon(href='https://www.linkedin.com/in/guilherme-gonzalez/', rel='tooltip', title='Me siga no Linkedin')
+								a.btn.btn-default.btn-round.btn-lg.btn-icon(href='https://www.linkedin.com/in/guilherme-gonzalez/', )
 									i.fa.fa-linkedin
 		#about.section
 			.container
@@ -52,7 +52,7 @@ header
 						.col-lg-6.col-md-12
 							.card-body
 								.h4.mt-0.title Sobre
-								p Ola! Meu nome é Guilherme Gonzalez e trabalho como Desenvolvedor Web.
+								p.typed
 								p
 									//- a(href='#', target='_blank') Learn More
 						.col-lg-6.col-md-12
@@ -80,83 +80,127 @@ header
 				.card(data-aos='fade-up', data-aos-anchor-placement='top-bottom')
 					.card-body
 						.row
-							//- .col-md-2
-							//- 	.progress-container.progress-primary
-							//- 		span HTML
-							//- 		.div
-							//- 			a.btn.btn-default.btn-round.btn-lg.btn-icon(href='https://www.linkedin.com/in/guilherme-gonzalez/', rel='tooltip', title='HTML')
-							//- 				i.fa.fa-html5
-							//- .col-md-2
-							//- 	.progress-container.progress-primary
-							//- 		span MongoDB
-							//- 		.div
-							//- 			a.btn.btn-lg.btn-icon.btn-round(href='https://www.linkedin.com/in/guilherme-gonzalez/', rel='tooltip', title='MongoDB')
-							//- 				img(src="images/mongodb.png", alt="", height="55" width="70" style="padding-top:10px")
-											
-							//- .col-md-2
-							//- 	.progress-container.progress-primary
-							//- 		span NodeJS
-							//- 		.div
-							//- 			a.btn.btn-lg.btn-icon.btn-flat(href='https://www.linkedin.com/in/guilherme-gonzalez/', rel='tooltip', title='MongoDB')
-							//- 				img(src="images/nodejs.png", alt="")
-							//- .col-md-2
-							//- 	.progress-container.progress-primary
-							//- 		span Pug
-							//- 		.div
-							//- 			a.btn.btn-default.btn-flat.btn-lg.btn-icon(href='https://www.linkedin.com/in/guilherme-gonzalez/', rel='tooltip', title='HTML')
-							//- 				i.fa.fa-html5
-							//- .col-md-2
-							//- 	.progress-container.progress-primary
-							//- 		span PHP
-							//- 		.div
-							//- 			a.btn.btn-lg.btn-icon.btn-flat(href='https://www.linkedin.com/in/guilherme-gonzalez/', rel='tooltip', title='MongoDB')
-							//- 				img(src="images/mongodb.png", alt="", height="55" width="70" style="padding-top:10px")
+							.col-md-2
+								a(href="https://angularjs.org/", title='Angular')
+									i.devicon-angularjs-plain(style="font-size: 80px; color: black")
+							
+							.col-md-2
+								a(href="https://git-scm.com/", title='Git')
+									i.devicon-git-plain(style="font-size: 80px; color: black")
 
-							//- .col-md-2
-							//- 	.progress-container.progress-primary
-							//- 		span MySQL
-							//- 		.div
-							//- 			a.btn.btn-lg.btn-icon.btn-round(href='https://www.linkedin.com/in/guilherme-gonzalez/', rel='tooltip', title='MongoDB')
-							//- 				img(src="images/js.jpg", alt="")
-							.col-md-6
-								.progress-container.progress-primary
-									span.progress-badge PHP
-									.progress
-										.progress-bar.progress-bar-primary(data-aos='progress-full', data-aos-offset='10', data-aos-duration='2000', role='progressbar', aria-valuenow='60', aria-valuemin='0', aria-valuemax='100', style='width: 75%;')
-										span.progress-value 75%
+							.col-md-2
+								a(href="https://github.com", title='GitHub')
+									i.devicon-github-plain-wordmark.colored(style="font-size: 80px; color: black")
+
+							.col-md-2
+								a(href="https://www.javascript.com/", title='JavaScript')
+									i.devicon-javascript-plain(style="font-size: 80px; color: black")
+
+							.col-md-2
+								a(href="https://nodejs.org" , title='NodeJS')
+									i.devicon-nodejs-plain-wordmark(style="font-size: 80px; color: black")
+
+							.col-md-2
+								a(href="https://www.mysql.com/" , title='MySQL')
+									i.devicon-mysql-plain-wordmark(style="font-size: 80px; color: black")
+						//- Segunda linha
+						.row(style="margin-top: 50px")
+							.col-md-2
+								a(href="http://php.net/" , title='PHP')
+									i.devicon-php-plain(style="font-size: 80px; color: black")
+							
+							.col-md-2
+								a(href="https://www.python.org/" , title='Pyhton')
+									i.devicon-python-plain(style="font-size: 80px; color: black")
+
+							.col-md-2
+								a(href="https://trello.com/" , title='Trello')
+									i.devicon-trello-plain(style="font-size: 80px; color: black")
+
+							.col-md-2
+								a(href="https://code.visualstudio.com/" , title='Visual Studio Code')
+									i.devicon-visualstudio-plain(style="font-size: 80px; color: black")
+
+							.col-md-2
+								a(href="https://www.codeigniter.com/" , title='Codeigniter')
+									i.devicon-codeigniter-plain(style="font-size: 80px; color: black")
+
+							.col-md-2
+								a(href="http://expressjs.com" , title='Express')
+									i.devicon-express-original(style="font-size: 80px; color: black")
+
+						//- Terceira linha
+						.row(style="margin-top: 50px")
+							.col-md-2
+								a(href="https://about.gitlab.com/", title='GitLab')
+									i.devicon-gitlab-plain(style="font-size: 80px; color: black")
+							
+							.col-md-2
+								a(href="https://golang.org/", title='GoLang')
+									i.devicon-go-plain(style="font-size: 80px; color: black")
+
+							.col-md-2
+								a(href="https://www.java.com/", title='Java')
+									i.devicon-java-plain(style="font-size: 80px; color: black")
+
+							.col-md-2
+								a(href="https://jquery.com/", title='Jquery')
+									i.devicon-jquery-plain(style="font-size: 80px; color: black")
+
+							.col-md-2
+								a(href="https://www.linux.org/", title='Linux')
+									i.devicon-linux-plain(style="font-size: 80px; color: black")
+
+							.col-md-2
+								a(href="https://www.mongodb.com/", title='MongoDB')
+									i.devicon-mongodb-plain(style="font-size: 80px; color: black")
+						
 									
-							.col-md-6
-								.progress-container.progress-primary
-									span.progress-badge CodeIgniter
-									.progress
-										.progress-bar.progress-bar-primary(data-aos='progress-full', data-aos-offset='10', data-aos-duration='2000', role='progressbar', aria-valuenow='60', aria-valuemin='0', aria-valuemax='100', style='width: 75%;')
-										span.progress-value 75%
-						.row
-							.col-md-6
-								.progress-container.progress-primary
-									span.progress-badge HTML
-									.progress
-										.progress-bar.progress-bar-primary(data-aos='progress-full', data-aos-offset='10', data-aos-duration='2000', role='progressbar', aria-valuenow='60', aria-valuemin='0', aria-valuemax='100', style='width: 60%;')
-										span.progress-value 60%
-							.col-md-6
-								.progress-container.progress-primary
-									span.progress-badge JavaScript
-									.progress
-										.progress-bar.progress-bar-primary(data-aos='progress-full', data-aos-offset='10', data-aos-duration='2000', role='progressbar', aria-valuenow='60', aria-valuemin='0', aria-valuemax='100', style='width: 60%;')
-										span.progress-value 60%
-						.row
-							.col-md-6
-								.progress-container.progress-primary
-									span.progress-badge NodeJS
-									.progress
-										.progress-bar.progress-bar-primary(data-aos='progress-full', data-aos-offset='10', data-aos-duration='2000', role='progressbar', aria-valuenow='60', aria-valuemin='0', aria-valuemax='100', style='width: 75%;')
-										span.progress-value 75%
-							.col-md-6
-								.progress-container.progress-primary
-									span.progress-badge MongoDB
-									.progress
-										.progress-bar.progress-bar-primary(data-aos='progress-full', data-aos-offset='10', data-aos-duration='2000', role='progressbar', aria-valuenow='60', aria-valuemin='0', aria-valuemax='100', style='width: 70%;')
-										span.progress-value 70%
+
+
+
+
+									
+				
+							//- .col-md-6
+							//- 	.progress-container.progress-primary
+							//- 		span.progress-badge PHP
+							//- 		.progress
+							//- 			.progress-bar.progress-bar-primary(data-aos='progress-full', data-aos-offset='10', data-aos-duration='2000', role='progressbar', aria-valuenow='60', aria-valuemin='0', aria-valuemax='100', style='width: 75%;')
+							//- 			span.progress-value 75%
+									
+							//- .col-md-6
+							//- 	.progress-container.progress-primary
+							//- 		span.progress-badge CodeIgniter
+							//- 		.progress
+							//- 			.progress-bar.progress-bar-primary(data-aos='progress-full', data-aos-offset='10', data-aos-duration='2000', role='progressbar', aria-valuenow='60', aria-valuemin='0', aria-valuemax='100', style='width: 75%;')
+							//- 			span.progress-value 75%
+						//- .row
+						//- 	.col-md-6
+						//- 		.progress-container.progress-primary
+						//- 			span.progress-badge HTML
+						//- 			.progress
+						//- 				.progress-bar.progress-bar-primary(data-aos='progress-full', data-aos-offset='10', data-aos-duration='2000', role='progressbar', aria-valuenow='60', aria-valuemin='0', aria-valuemax='100', style='width: 60%;')
+						//- 				span.progress-value 60%
+						//- 	.col-md-6
+						//- 		.progress-container.progress-primary
+						//- 			span.progress-badge JavaScript
+						//- 			.progress
+						//- 				.progress-bar.progress-bar-primary(data-aos='progress-full', data-aos-offset='10', data-aos-duration='2000', role='progressbar', aria-valuenow='60', aria-valuemin='0', aria-valuemax='100', style='width: 60%;')
+						//- 				span.progress-value 60%
+						//- .row
+						//- 	.col-md-6
+						//- 		.progress-container.progress-primary
+						//- 			span.progress-badge NodeJS
+						//- 			.progress
+						//- 				.progress-bar.progress-bar-primary(data-aos='progress-full', data-aos-offset='10', data-aos-duration='2000', role='progressbar', aria-valuenow='60', aria-valuemin='0', aria-valuemax='100', style='width: 75%;')
+						//- 				span.progress-value 75%
+						//- 	.col-md-6
+						//- 		.progress-container.progress-primary
+						//- 			span.progress-badge MongoDB
+						//- 			.progress
+						//- 				.progress-bar.progress-bar-primary(data-aos='progress-full', data-aos-offset='10', data-aos-duration='2000', role='progressbar', aria-valuenow='60', aria-valuemin='0', aria-valuemax='100', style='width: 70%;')
+						//- 				span.progress-value 70%
 		//- #portfolio.section
 		//- 	.container
 		//- 		.row
@@ -350,3 +394,20 @@ header
 													strong Email
 												p guilherme.gonzalezv@hotmail.com
 	include footer
+		script(src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous")
+		script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous")
+	
+		script.
+			$('#downloadLink').click(function(e) {
+				e.preventDefault(); //truque para o browser não abrir a página do link
+				window.location.href = '/download';
+			}); 
+
+			document.addEventListener("DOMContentLoaded", function(event) {
+				var options = {
+					strings: ["Ola! Meu nome é Guilherme Gonzalez e trabalho como Desenvolvedor Web, sou aluno do Instituto Federal de Educação, Ciência e Tecnologia de Sâo Paulo, Campus Jacareí."],
+					typeSpeed: 30,
+				}
+				var typed = new Typed(".typed", options);	// do typed.js stuff
+			});
