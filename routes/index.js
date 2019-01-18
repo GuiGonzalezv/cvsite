@@ -7,7 +7,7 @@ router.all('/', function(req, res, next) {
 });
 
 router.all('/download', function(req, res, next) {
-  var path = 'public/curriculo/GuilhermeGonzalezCurriculo.docx'
+  var path = 'public/curriculo/GuilhermeGonzalezCurriculoC.docx'
   res.download(path);
 });
 
